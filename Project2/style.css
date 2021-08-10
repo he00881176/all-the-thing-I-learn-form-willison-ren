@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+/*標題*/
+header {
+  background-color: #c4c4c4;
+  padding: 1rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header h1 i {
+  font-size: 3rem;
+}
+
+/*導覽列*/
+nav {
+  background-color: #312f2f;
+  padding: 1rem;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #c4c4c4;
+  margin: 1rem;
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+nav ul li a i {
+  font-size: 1.75rem;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+.active {
+  color: white;
+}
+
+/*主要內容*/
+section.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section.container a {
+  color: rgba(4, 214, 151, 0.623);
+  text-decoration: none;
+}
+
+section.left {
+  padding: 2rem;
+  flex: 4 1 350px;
+}
+
+section.right {
+  padding: 2rem;
+  flex: 1 1 200px;
+  text-align: center;
+}
+
+section.right h5 {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+section.right iframe {
+  border-radius: 2rem;
+}
+
+#curve_chart {
+  width: 80%;
+  height: 80%;
+}
+
+@media screen and (max-width: 570px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  #curve_chart {
+    width: 100%;
+    height: 40%;
+  }
+}

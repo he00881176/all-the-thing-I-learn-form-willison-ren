@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(90deg, rgb(159, 0, 207), rgb(0, 205, 219));
+
+  input {
+    padding: 2rem;
+    margin: 0.5rem;
+    font-size: 1.75rem;
+    border: 1px solid black;
+  }
+
+  button {
+    background-color: white;
+    padding: 2rem;
+    margin: 0.5rem;
+    font-size: 1.75rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  button:active {
+    background-color: gray;
+  }
+
+  button.verticalExtend {
+    padding: 5.5rem 2rem;
+  }
+
+  button.horizentalExtend {
+    padding: 2rem 5.5rem;
+  }
+}

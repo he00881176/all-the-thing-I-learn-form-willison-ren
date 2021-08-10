@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: -webkit-gradient(linear, left top, right top, from(#9f00cf), to(#00cddb));
+  background: linear-gradient(90deg, #9f00cf, #00cddb);
+}
+
+body input {
+  padding: 2rem;
+  margin: 0.5rem;
+  font-size: 1.75rem;
+  border: 1px solid black;
+}
+
+body button {
+  background-color: white;
+  padding: 2rem;
+  margin: 0.5rem;
+  font-size: 1.75rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+body button:active {
+  background-color: gray;
+}
+
+body button.verticalExtend {
+  padding: 5.5rem 2rem;
+}
+
+body button.horizentalExtend {
+  padding: 2rem 5.5rem;
+}
+/*# sourceMappingURL=style.css.map */

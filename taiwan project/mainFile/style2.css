@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+/*標題樣式*/
+
+header {
+  background-color: #c4c4c4;
+  width: 100%;
+  padding: 1rem;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+header h3 {
+  padding: 0.25rem 0 0 2rem;
+}
+
+/*導覽列樣式*/
+
+nav {
+  background-color: #3d3737;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding-left: 1rem;
+}
+
+nav ul li {
+  padding: 0.5rem 0.75rem;
+}
+
+nav ul li a {
+  color: rgb(133, 133, 133);
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.5s ease;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+.actived {
+  color: white;
+}
+
+/* 主要內容 */
+
+main {
+  display: flex;
+  padding: 1.5rem;
+  line-height: 2;
+}
+main div {
+  padding: 2rem;
+}
+
+div ul li a {
+  text-decoration: none;
+}
+
+div ul {
+  list-style-type: square;
+  width: 200px;
+}

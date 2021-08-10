@@ -1,0 +1,268 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+  -webkit-box-shadow: 3px 3px 5px 1px gray;
+          box-shadow: 3px 3px 5px 1px gray;
+}
+
+header div.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 5;
+      -ms-flex: 5 1 400px;
+          flex: 5 1 400px;
+  margin-left: 2rem;
+}
+
+header div.logo img {
+  width: 6vw;
+  height: 6vh;
+}
+
+header nav {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 400px;
+          flex: 2 1 400px;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-right: 3rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #05c5c5;
+  font-size: 1.35rem;
+}
+
+a:hover {
+  color: cadetblue;
+}
+
+main section.pictureImage {
+  min-height: 90vh;
+  width: 100%;
+  background-image: url("../資源包/Pictures/pexels-photo-416676.jpeg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+main section.pictureImage h1 {
+  font-size: 3.5rem;
+  color: white;
+}
+
+main section.pictureImage button.start {
+  background-color: #24cccc;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  border-radius: 1.5rem;
+  border: none;
+}
+
+main section.pictureImage button.start:active {
+  background-color: #005c91;
+}
+
+main section.pictureImage div.filter {
+  min-height: 90vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  z-index: -1;
+}
+
+main section.second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+main section.second button:active {
+  background-color: #005c91;
+}
+
+main section.second div {
+  margin-top: 2rem;
+}
+
+main section.second h1 {
+  font-size: 3.5rem;
+}
+
+main section.second h1.green {
+  color: #24cccc;
+}
+
+main section.second h4 {
+  margin-top: 1rem;
+}
+
+main section.second ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section.second ul li {
+  list-style-type: none;
+  margin: 1rem 5rem;
+}
+
+main section.second ul li img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+main section.second ul li button {
+  background-color: #00878f;
+  color: white;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  #change {
+    margin: 5rem 0 5rem 2rem;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  header div.logo {
+    margin-left: 1rem;
+  }
+  header div.logo img {
+    width: 13vw;
+    height: 13vh;
+  }
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #b2b2b2;
+  font-size: 1.5rem;
+  min-height: 40vh;
+  width: 100%;
+}
+
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3rem;
+}
+
+footer div img {
+  width: 6vw;
+  height: 6vh;
+}
+
+footer ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer ul li {
+  margin: 1rem 2rem;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */
